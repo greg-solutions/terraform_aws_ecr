@@ -1,6 +1,4 @@
-variable "vpc_env" {
-  description = "Name of VPC to make provisioning for. Almost all resources, created within VPC will be tagged with this value"
-  type = "string"
+variable "repository_prefix" {
 }
 
 variable "image_tag" {

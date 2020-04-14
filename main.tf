@@ -1,5 +1,5 @@
 resource "aws_ecr_repository" "container_repository" {
-  name = "${lower(var.vpc_env)}-${lower(var.image_tag)}"
+  name = "${lower(var.repository_prefix)}-${lower(var.image_tag)}"
 }
 
 resource "aws_ecr_lifecycle_policy" "container_repository_lifecycle_policy" {

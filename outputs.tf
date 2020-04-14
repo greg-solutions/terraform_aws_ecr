@@ -1,6 +1,6 @@
-output "application-repository-name" {
+output "name" {
   value = aws_ecr_repository.container_repository.name
 }
-output "application-repository-url" {
+output "url" {
   value = aws_ecr_repository.container_repository.repository_url
 }
